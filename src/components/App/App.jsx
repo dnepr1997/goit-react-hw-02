@@ -41,7 +41,11 @@ export const App = () => {
       <Description />
       <Options onUpdate={handleFeedbackClick} />
       {totalFeedback > 0 && (
-        <button type="button" onClick={handleReset}>
+        <button
+          style={{ backgroundColor: 'red', borderRadius: 10 }}
+          type="button"
+          onClick={handleReset}
+        >
           Reset
         </button>
       )}
