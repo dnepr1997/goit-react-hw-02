@@ -39,8 +39,12 @@ export const App = () => {
   return (
     <div>
       <Description />
-      <Options onUpdate={handleFeedbackClick} />
-      {totalFeedback > 0 && (
+      <Options
+        onUpdate={handleFeedbackClick}
+        handleReset={handleReset}
+        totalFeedback={totalFeedback}
+      />
+      {/* {totalFeedback > 0 && (
         <button
           style={{ backgroundColor: 'red', borderRadius: 10 }}
           type="button"
@@ -48,7 +52,7 @@ export const App = () => {
         >
           Reset
         </button>
-      )}
+      )} */}
       {totalFeedback > 0 ? (
         <Feedback
           good={response.good}
@@ -63,3 +67,14 @@ export const App = () => {
     </div>
   );
 };
+//  {
+//    totalFeedback > 0 && (
+//      <button
+//        style={{ backgroundColor: 'red', borderRadius: 10 }}
+//        type="button"
+//        onClick={handleReset}
+//      >
+//        Reset
+//      </button>
+//    );
+//  }
