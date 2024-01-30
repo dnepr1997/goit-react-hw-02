@@ -44,15 +44,6 @@ export const App = () => {
         handleReset={handleReset}
         totalFeedback={totalFeedback}
       />
-      {/* {totalFeedback > 0 && (
-        <button
-          style={{ backgroundColor: 'red', borderRadius: 10 }}
-          type="button"
-          onClick={handleReset}
-        >
-          Reset
-        </button>
-      )} */}
       {totalFeedback > 0 ? (
         <Feedback
           good={response.good}
@@ -67,14 +58,3 @@ export const App = () => {
     </div>
   );
 };
-//  {
-//    totalFeedback > 0 && (
-//      <button
-//        style={{ backgroundColor: 'red', borderRadius: 10 }}
-//        type="button"
-//        onClick={handleReset}
-//      >
-//        Reset
-//      </button>
-//    );
-//  }

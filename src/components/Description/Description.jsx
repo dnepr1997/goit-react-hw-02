@@ -1,5 +1,3 @@
-import css from './Description.module.css';
-
 export const Description = () => {
   return (
     <div>
